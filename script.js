@@ -297,8 +297,8 @@ function tampilkanSertifikat(mahasiswa) {
 
     new QRCode(document.getElementById("qrcode"), {
         text: verifyUrl,
-        width: 145,
-        height: 145
+        width: 200,
+        height: 200
     });
 }
 
