@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Certificate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+
+        <button id="connectWalletBtn">
+            Connect Wallet
+        </button>
+
+        <button id="saveBlockchainBtn">
+            Save Current Certificate
+        </button>
+
+        <button id="saveAllBlockchainBtn">
+            Save All To Blockchain (Batch)
+        </button>
+
+        <button id="prevBtn">
+            &laquo; Previous
+        </button>
+
+        <button id="nextBtn">
+            Next &raquo;
+        </button>
+
+        <button id="generateAllBtn">
+            Generate All Certificates
+        </button>
+
+        <div id="status">
+            Ready
+        </div>
+
+    </div>
+
+    <!-- Sertifikat -->
+    <div class="certificate">
+
+        <div class="border"></div>
+
+        <div class="header">
+
+            <img src="logo-univ.png" alt="Logo Universitas" class="logo">
+
+            <p class="institution">
+                BLOCKCHAIN CERTIFICATE VERIFICATION SYSTEM
+            </p>
+
+            <h1>SERTIFIKAT</h1>
+
+            <p class="subtitle">
+                Certificate of Achievement
+            </p>
+
+        </div>
+
+        <div class="content">
+
+            <p class="awarded">
+                Diberikan kepada
+            </p>
+
+            <h2 id="nama">
+                Nama Mahasiswa
+            </h2>
+
+            <p class="description">
+                Telah berhasil menyelesaikan kegiatan
+                <strong id="kegiatan">Nama Kegiatan</strong>
+                dan dinyatakan memenuhi seluruh persyaratan program.
+            </p>
+
+            <div class="info">
+
+                <p>
+                    <strong>NIM :</strong>
+                    <span id="nim"></span>
+                </p>
+
+                <p>
+                    <strong>Prodi :</strong>
+                    <span id="prodi"></span>
+                </p>
+
+                <p>
+                    <strong>Angkatan :</strong>
+                    <span id="angkatan"></span>
+                </p>
+
+                <p>
+                    <strong>Tanggal :</strong>
+                    <span id="tanggal"></span>
+                </p>
+
+            </div>
+
+            <div class="certificate-meta">
+
+                <p>
+                    <strong>ID Sertifikat :</strong>
+                    <span id="certificate_id"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="qr-area">
+
+                <div id="qrcode"></div>
+
+                <p class="qr-label">
+                    Scan untuk Verifikasi
+                </p>
+
+            </div>
+
+            <div class="signature">
+
+                <img src="ttd-ketua.png" alt="Tanda Tangan">
+
+                <hr>
+
+                <h4>Dr. Doxzvy, S.Kom., M.Kom.</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Papa Parse -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <!-- QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- SHA-256 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+    <!-- Screenshot HTML ke PNG -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- ZIP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <!-- Download File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <!-- ETHERS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+
+    <script>
+        console.log("ethers =", typeof ethers);
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

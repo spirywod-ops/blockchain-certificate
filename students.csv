@@ -1,0 +1,301 @@
+certificate_id,nama,nim,prodi,angkatan,kegiatan,tanggal
+CERT-0001,Siti Setiawan,672023063,Informatika,2023,Bootcamp Fullstack Developer,2026-02-05
+CERT-0002,Aditya Santoso,712021152,Pendidikan Informatika,2021,Workshop Data Analytics,2026-01-09
+CERT-0003,Budi Kusuma,682022130,Sistem Informasi,2022,Digital Marketing Masterclass,2026-01-07
+CERT-0004,Mega Siregar,712024057,Pendidikan Informatika,2024,DevOps Essential Training,2026-05-31
+CERT-0005,Suryo Fauzi,682024088,Sistem Informasi,2024,Seminar Cloud Computing,2026-02-09
+CERT-0006,Nugroho Lestari,672021098,Informatika,2021,Workshop Machine Learning,2026-04-02
+CERT-0007,Irfan Putri,712023207,Pendidikan Informatika,2023,Pelatihan Blockchain,2026-04-28
+CERT-0008,Lestari Setiawan,702021142,Teknik Komputer,2021,Seminar Cloud Computing,2026-06-10
+CERT-0009,Rina Rahmawati,712022181,Pendidikan Informatika,2022,Workshop Machine Learning,2026-01-12
+CERT-0010,Utami Sitorus,692021219,Teknologi Informasi,2021,Bootcamp Fullstack Developer,2026-01-26
+CERT-0011,Bunga Pohan,702023042,Teknik Komputer,2023,Pelatihan UI/UX Design,2026-04-01
+CERT-0012,Nugroho Pohan,672022137,Informatika,2022,Bootcamp Fullstack Developer,2026-02-11
+CERT-0013,Gita Wulandari,692022176,Teknologi Informasi,2022,Pelatihan UI/UX Design,2026-01-15
+CERT-0014,Oki Wibowo,692024069,Teknologi Informasi,2024,Workshop Machine Learning,2026-02-24
+CERT-0015,Reza Mulyadi,692022168,Teknologi Informasi,2022,DevOps Essential Training,2026-04-12
+CERT-0016,Maulana Ningsih,682023036,Sistem Informasi,2023,Bootcamp Fullstack Developer,2026-05-24
+CERT-0017,Lestari Pasaribu,712024230,Pendidikan Informatika,2024,Digital Marketing Masterclass,2026-04-13
+CERT-0018,Anisa Sitorus,682024024,Sistem Informasi,2024,Pelatihan Blockchain,2026-01-29
+CERT-0019,Joko Utama,702021099,Teknik Komputer,2021,Workshop Data Analytics,2026-06-02
+CERT-0020,Gita Suhendra,692021175,Teknologi Informasi,2021,Workshop Machine Learning,2026-05-18
+CERT-0021,Amir Pohan,692021076,Teknologi Informasi,2021,Workshop Data Analytics,2026-02-10
+CERT-0022,Gita Fauzi,692022130,Teknologi Informasi,2022,Workshop Machine Learning,2026-06-10
+CERT-0023,Utomo Budiman,712022040,Pendidikan Informatika,2022,Pelatihan UI/UX Design,2026-02-11
+CERT-0024,Lestari Suhendra,672023126,Informatika,2023,Pelatihan Blockchain,2026-01-29
+CERT-0025,Rifqi Rahmawati,692022015,Teknologi Informasi,2022,Bootcamp Fullstack Developer,2026-05-26
+CERT-0026,Fahmi Kusuma,702021195,Teknik Komputer,2021,Mobile Apps Development Hackathon,2026-02-02
+CERT-0027,Indra Subagyo,712022068,Pendidikan Informatika,2022,Mobile Apps Development Hackathon,2026-06-05
+CERT-0028,Eka Nasution,712022183,Pendidikan Informatika,2022,Seminar Cloud Computing,2026-04-13
+CERT-0029,Utami Rahmawati,702024031,Teknik Komputer,2024,Bootcamp Fullstack Developer,2026-02-27
+CERT-0030,Eko Lestari,672022151,Informatika,2022,Bootcamp Fullstack Developer,2026-01-02
+CERT-0031,Eko Hidayat,682021232,Sistem Informasi,2021,Pelatihan Blockchain,2026-03-26
+CERT-0032,Eko Budiman,682023172,Sistem Informasi,2023,DevOps Essential Training,2026-02-24
+CERT-0033,Lestari Nugraha,712024063,Pendidikan Informatika,2024,DevOps Essential Training,2026-04-15
+CERT-0034,Maman Santoso,672024091,Informatika,2024,Workshop Data Analytics,2026-04-16
+CERT-0035,Gita Hidayat,672021104,Informatika,2021,Pelatihan UI/UX Design,2026-01-28
+CERT-0036,Putra Siregar,682024036,Sistem Informasi,2024,Workshop Data Analytics,2026-02-16
+CERT-0037,Suryo Ningsih,682021114,Sistem Informasi,2021,Mobile Apps Development Hackathon,2026-01-26
+CERT-0038,Dedi Gunawan,672021238,Informatika,2021,Bootcamp Fullstack Developer,2026-02-12
+CERT-0039,Dewi Purnomo,702022222,Teknik Komputer,2022,Workshop Data Analytics,2026-01-16
+CERT-0040,Kurniawan Wulandari,672024068,Informatika,2024,DevOps Essential Training,2026-03-15
+CERT-0041,Eka Sudrajat,702022049,Teknik Komputer,2022,Seminar Cloud Computing,2026-02-25
+CERT-0042,Dedi Hadi,712021192,Pendidikan Informatika,2021,Pelatihan UI/UX Design,2026-01-15
+CERT-0043,Dedi Hadi,702022015,Teknik Komputer,2022,Mobile Apps Development Hackathon,2026-01-21
+CERT-0044,Irfan Wijaya,672021173,Informatika,2021,Bootcamp Fullstack Developer,2026-04-14
+CERT-0045,Hendra Mulyadi,682021159,Sistem Informasi,2021,Workshop Machine Learning,2026-04-18
+CERT-0046,Utami Hadi,712023240,Pendidikan Informatika,2023,Seminar Cloud Computing,2026-02-22
+CERT-0047,Utami Sari,682023102,Sistem Informasi,2023,Webinar Cyber Security,2026-06-15
+CERT-0048,Utomo Ningsih,692021003,Teknologi Informasi,2021,DevOps Essential Training,2026-06-09
+CERT-0049,Nanda Santoso,672022130,Informatika,2022,Seminar Cloud Computing,2026-02-03
+CERT-0050,Rifqi Putri,672022095,Informatika,2022,Seminar Cloud Computing,2026-02-10
+CERT-0051,Fitri Gunawan,692021171,Teknologi Informasi,2021,Mobile Apps Development Hackathon,2026-03-18
+CERT-0052,Rifqi Santoso,682023030,Sistem Informasi,2023,Workshop Machine Learning,2026-05-22
+CERT-0053,Joko Pohan,692022184,Teknologi Informasi,2022,Pelatihan UI/UX Design,2026-02-22
+CERT-0054,Vina Pasaribu,712024065,Pendidikan Informatika,2024,Pelatihan Blockchain,2026-01-24
+CERT-0055,Siti Fitriani,692021001,Teknologi Informasi,2021,Pelatihan UI/UX Design,2026-02-03
+CERT-0056,Siti Pasaribu,682024142,Sistem Informasi,2024,Workshop Data Analytics,2026-05-24
+CERT-0057,Ahmad Setiawan,672022140,Informatika,2022,Pelatihan Blockchain,2026-04-05
+CERT-0058,Olivia Sudrajat,682024033,Sistem Informasi,2024,Pelatihan Blockchain,2026-03-20
+CERT-0059,Anisa Wibowo,692022175,Teknologi Informasi,2022,Bootcamp Fullstack Developer,2026-01-27
+CERT-0060,Zainal Sudrajat,702022237,Teknik Komputer,2022,Bootcamp Fullstack Developer,2026-02-11
+CERT-0061,Dani Wijaya,702021046,Teknik Komputer,2021,Pelatihan UI/UX Design,2026-04-16
+CERT-0062,Dani Simanjuntak,692022202,Teknologi Informasi,2022,Workshop Machine Learning,2026-04-08
+CERT-0063,Kevin Wibowo,702022052,Teknik Komputer,2022,DevOps Essential Training,2026-03-31
+CERT-0064,Utomo Sitorus,682021169,Sistem Informasi,2021,Bootcamp Fullstack Developer,2026-04-13
+CERT-0065,Yudi Pohan,672023090,Informatika,2023,Mobile Apps Development Hackathon,2026-04-13
+CERT-0066,Vina Gunawan,692021030,Teknologi Informasi,2021,Seminar Cloud Computing,2026-02-15
+CERT-0067,Olivia Pasaribu,672021153,Informatika,2021,Workshop Data Analytics,2026-03-30
+CERT-0068,Zahra Sari,702021231,Teknik Komputer,2021,Digital Marketing Masterclass,2026-02-18
+CERT-0069,Rian Wibowo,702021134,Teknik Komputer,2021,Mobile Apps Development Hackathon,2026-02-20
+CERT-0070,Anisa Fitriani,672023160,Informatika,2023,Pelatihan UI/UX Design,2026-02-01
+CERT-0071,Zahra Harahap,712023171,Pendidikan Informatika,2023,Workshop Data Analytics,2026-03-25
+CERT-0072,Citra Hasibuan,712022050,Pendidikan Informatika,2022,Workshop Data Analytics,2026-04-08
+CERT-0073,Vina Wijaya,712023104,Pendidikan Informatika,2023,Mobile Apps Development Hackathon,2026-01-01
+CERT-0074,Utomo Hasibuan,682024202,Sistem Informasi,2024,Digital Marketing Masterclass,2026-06-05
+CERT-0075,Tari Sari,702024114,Teknik Komputer,2024,Bootcamp Fullstack Developer,2026-05-11
+CERT-0076,Hayati Utama,672023132,Informatika,2023,Digital Marketing Masterclass,2026-03-27
+CERT-0077,Fahmi Simanjuntak,692022207,Teknologi Informasi,2022,Bootcamp Fullstack Developer,2026-02-07
+CERT-0078,Budi Wibowo,682024157,Sistem Informasi,2024,Workshop Machine Learning,2026-04-27
+CERT-0079,Dewi Mulyadi,682024127,Sistem Informasi,2024,Workshop Data Analytics,2026-03-04
+CERT-0080,Joko Fauzi,672024057,Informatika,2024,Webinar Cyber Security,2026-05-13
+CERT-0081,Gita Hidayat,712022235,Pendidikan Informatika,2022,Workshop Machine Learning,2026-04-27
+CERT-0082,Indra Ningsih,712023244,Pendidikan Informatika,2023,DevOps Essential Training,2026-06-06
+CERT-0083,Farhan Budiman,702024230,Teknik Komputer,2024,Webinar Cyber Security,2026-05-02
+CERT-0084,Fitri Pasaribu,682023197,Sistem Informasi,2023,Mobile Apps Development Hackathon,2026-05-05
+CERT-0085,Siti Simanjuntak,692024020,Teknologi Informasi,2024,Seminar Cloud Computing,2026-03-02
+CERT-0086,Suryo Lestari,692021036,Teknologi Informasi,2021,Webinar Cyber Security,2026-03-01
+CERT-0087,Bunga Laksana,682021107,Sistem Informasi,2021,Workshop Data Analytics,2026-03-26
+CERT-0088,Lestari Ningsih,702021053,Teknik Komputer,2021,Workshop Data Analytics,2026-04-10
+CERT-0089,Naufal Hadi,672024123,Informatika,2024,Pelatihan Blockchain,2026-04-01
+CERT-0090,Utomo Wulandari,702022125,Teknik Komputer,2022,Bootcamp Fullstack Developer,2026-03-11
+CERT-0091,Eka Purnomo,672024087,Informatika,2024,Workshop Data Analytics,2026-02-12
+CERT-0092,Hafiz Ningsih,682021233,Sistem Informasi,2021,Workshop Data Analytics,2026-06-01
+CERT-0093,Nanda Saputra,672024035,Informatika,2024,DevOps Essential Training,2026-02-16
+CERT-0094,Dedi Pasaribu,702023055,Teknik Komputer,2023,DevOps Essential Training,2026-03-25
+CERT-0095,Yudi Wulandari,692024065,Teknologi Informasi,2024,Workshop Machine Learning,2026-05-01
+CERT-0096,Budi Gunawan,672023058,Informatika,2023,Workshop Machine Learning,2026-01-11
+CERT-0097,Amir Saputra,682022215,Sistem Informasi,2022,Pelatihan Blockchain,2026-06-09
+CERT-0098,Joko Simanjuntak,682024172,Sistem Informasi,2024,Workshop Machine Learning,2026-05-25
+CERT-0099,Nugroho Ningsih,692023043,Teknologi Informasi,2023,Digital Marketing Masterclass,2026-06-05
+CERT-0100,Aditya Setiawan,682023028,Sistem Informasi,2023,Digital Marketing Masterclass,2026-01-07
+CERT-0101,Rifqi Harahap,712024102,Pendidikan Informatika,2024,Bootcamp Fullstack Developer,2026-01-20
+CERT-0102,Olivia Simanjuntak,672023218,Informatika,2023,Digital Marketing Masterclass,2026-01-31
+CERT-0103,Cahyo Mulyadi,672023137,Informatika,2023,Workshop Data Analytics,2026-04-05
+CERT-0104,Eko Budiman,692021218,Teknologi Informasi,2021,Workshop Data Analytics,2026-05-06
+CERT-0105,Gilang Fitriani,692024182,Teknologi Informasi,2024,Webinar Cyber Security,2026-04-22
+CERT-0106,Lukman Suhendra,692024120,Teknologi Informasi,2024,Workshop Data Analytics,2026-06-01
+CERT-0107,Suryo Sari,682021072,Sistem Informasi,2021,DevOps Essential Training,2026-03-04
+CERT-0108,Amir Ningsih,712024087,Pendidikan Informatika,2024,Pelatihan Blockchain,2026-05-07
+CERT-0109,Irfan Sari,682024055,Sistem Informasi,2024,Pelatihan UI/UX Design,2026-03-08
+CERT-0110,Yudi Pohan,712023143,Pendidikan Informatika,2023,Pelatihan Blockchain,2026-05-13
+CERT-0111,Maman Kusuma,682024126,Sistem Informasi,2024,Mobile Apps Development Hackathon,2026-03-03
+CERT-0112,Wati Subagyo,702024203,Teknik Komputer,2024,Pelatihan Blockchain,2026-01-24
+CERT-0113,Taufik Sitorus,702022079,Teknik Komputer,2022,Digital Marketing Masterclass,2026-04-05
+CERT-0114,Hayati Sudrajat,712023109,Pendidikan Informatika,2023,Mobile Apps Development Hackathon,2026-03-26
+CERT-0115,Zainal Ningsih,692023065,Teknologi Informasi,2023,Bootcamp Fullstack Developer,2026-01-31
+CERT-0116,Zahra Siregar,692021191,Teknologi Informasi,2021,Mobile Apps Development Hackathon,2026-02-17
+CERT-0117,Maman Nasution,702023186,Teknik Komputer,2023,Digital Marketing Masterclass,2026-05-15
+CERT-0118,Putri Hasibuan,672022076,Informatika,2022,Bootcamp Fullstack Developer,2026-04-03
+CERT-0119,Lukman Harahap,672022071,Informatika,2022,Pelatihan Blockchain,2026-01-14
+CERT-0120,Mega Hasibuan,682024027,Sistem Informasi,2024,Pelatihan Blockchain,2026-05-27
+CERT-0121,Taufik Subagyo,702024088,Teknik Komputer,2024,Webinar Cyber Security,2026-01-14
+CERT-0122,Rian Subagyo,672021103,Informatika,2021,DevOps Essential Training,2026-01-19
+CERT-0123,Nanda Hidayat,682022208,Sistem Informasi,2022,Digital Marketing Masterclass,2026-03-19
+CERT-0124,Fahmi Simanjuntak,672024156,Informatika,2024,Digital Marketing Masterclass,2026-06-08
+CERT-0125,Oki Suhendra,702024233,Teknik Komputer,2024,DevOps Essential Training,2026-03-18
+CERT-0126,Kevin Hadi,702023146,Teknik Komputer,2023,Digital Marketing Masterclass,2026-01-16
+CERT-0127,Rina Santoso,682022068,Sistem Informasi,2022,Workshop Machine Learning,2026-02-10
+CERT-0128,Putra Wijaya,712021041,Pendidikan Informatika,2021,Pelatihan Blockchain,2026-04-15
+CERT-0129,Fitri Sanjaya,702023009,Teknik Komputer,2023,Bootcamp Fullstack Developer,2026-03-15
+CERT-0130,Yuli Hasibuan,702021176,Teknik Komputer,2021,Bootcamp Fullstack Developer,2026-03-09
+CERT-0131,Cahyo Hadi,682024030,Sistem Informasi,2024,Mobile Apps Development Hackathon,2026-02-27
+CERT-0132,Tari Laksana,692022019,Teknologi Informasi,2022,Pelatihan Blockchain,2026-02-12
+CERT-0133,Cahyo Harahap,712023113,Pendidikan Informatika,2023,Workshop Machine Learning,2026-04-30
+CERT-0134,Wati Harahap,702023129,Teknik Komputer,2023,Mobile Apps Development Hackathon,2026-05-07
+CERT-0135,Fitri Kusuma,712021228,Pendidikan Informatika,2021,Workshop Data Analytics,2026-03-24
+CERT-0136,Putri Pasaribu,672021059,Informatika,2021,Digital Marketing Masterclass,2026-05-31
+CERT-0137,Budi Pohan,712021196,Pendidikan Informatika,2021,Webinar Cyber Security,2026-05-01
+CERT-0138,Kartika Zulaikha,692022150,Teknologi Informasi,2022,Workshop Data Analytics,2026-06-12
+CERT-0139,Farhan Purnomo,672024090,Informatika,2024,Workshop Data Analytics,2026-03-27
+CERT-0140,Wawan Santoso,682023106,Sistem Informasi,2023,DevOps Essential Training,2026-03-15
+CERT-0141,Utami Utami,712021117,Pendidikan Informatika,2021,Workshop Machine Learning,2026-03-22
+CERT-0142,Rian Sari,672024222,Informatika,2024,Mobile Apps Development Hackathon,2026-01-01
+CERT-0143,Utami Gunawan,702024014,Teknik Komputer,2024,Bootcamp Fullstack Developer,2026-05-13
+CERT-0144,Anisa Raharjo,702024195,Teknik Komputer,2024,Pelatihan Blockchain,2026-02-22
+CERT-0145,Suryo Sudrajat,682023113,Sistem Informasi,2023,DevOps Essential Training,2026-02-01
+CERT-0146,Budi Sanjaya,682022080,Sistem Informasi,2022,Mobile Apps Development Hackathon,2026-01-04
+CERT-0147,Mega Astuti,672022216,Informatika,2022,Workshop Machine Learning,2026-04-29
+CERT-0148,Hendra Laksana,702023131,Teknik Komputer,2023,Seminar Cloud Computing,2026-04-17
+CERT-0149,Hafiz Subagyo,702022117,Teknik Komputer,2022,Mobile Apps Development Hackathon,2026-02-07
+CERT-0150,Bunga Siregar,712022222,Pendidikan Informatika,2022,Workshop Machine Learning,2026-03-12
+CERT-0151,Bambang Astuti,692023211,Teknologi Informasi,2023,Pelatihan Blockchain,2026-03-14
+CERT-0152,Zahra Harahap,712024222,Pendidikan Informatika,2024,Webinar Cyber Security,2026-04-25
+CERT-0153,Lestari Subagyo,692023142,Teknologi Informasi,2023,Mobile Apps Development Hackathon,2026-04-07
+CERT-0154,Gita Sari,682022147,Sistem Informasi,2022,Workshop Data Analytics,2026-03-01
+CERT-0155,Irfan Astuti,672023191,Informatika,2023,DevOps Essential Training,2026-04-08
+CERT-0156,Bunga Laksana,702021033,Teknik Komputer,2021,Mobile Apps Development Hackathon,2026-06-01
+CERT-0157,Yudi Santoso,702021135,Teknik Komputer,2021,DevOps Essential Training,2026-01-04
+CERT-0158,Zahra Laksana,702022020,Teknik Komputer,2022,DevOps Essential Training,2026-03-09
+CERT-0159,Yudi Raharjo,702021219,Teknik Komputer,2021,Pelatihan UI/UX Design,2026-05-17
+CERT-0160,Bunga Sari,702021159,Teknik Komputer,2021,Workshop Machine Learning,2026-03-02
+CERT-0161,Siti Hasibuan,682021112,Sistem Informasi,2021,Workshop Machine Learning,2026-06-12
+CERT-0162,Yuli Santoso,702022178,Teknik Komputer,2022,Seminar Cloud Computing,2026-01-08
+CERT-0163,Cipto Sari,672023092,Informatika,2023,Pelatihan UI/UX Design,2026-04-21
+CERT-0164,Joko Simanjuntak,712024145,Pendidikan Informatika,2024,Webinar Cyber Security,2026-02-13
+CERT-0165,Lukman Kusuma,712024159,Pendidikan Informatika,2024,Bootcamp Fullstack Developer,2026-05-08
+CERT-0166,Reza Hadi,682022119,Sistem Informasi,2022,Seminar Cloud Computing,2026-04-28
+CERT-0167,Rian Fauzi,702023174,Teknik Komputer,2023,Mobile Apps Development Hackathon,2026-02-10
+CERT-0168,Eko Zulaikha,692023164,Teknologi Informasi,2023,Workshop Data Analytics,2026-03-06
+CERT-0169,Gita Harahap,682024219,Sistem Informasi,2024,DevOps Essential Training,2026-01-28
+CERT-0170,Putra Wulandari,712023148,Pendidikan Informatika,2023,Seminar Cloud Computing,2026-03-17
+CERT-0171,Budi Utami,692021145,Teknologi Informasi,2021,Pelatihan Blockchain,2026-06-05
+CERT-0172,Aditya Purnomo,692022156,Teknologi Informasi,2022,Pelatihan UI/UX Design,2026-02-26
+CERT-0173,Siti Siregar,712023174,Pendidikan Informatika,2023,Webinar Cyber Security,2026-06-10
+CERT-0174,Gilang Wibowo,692024009,Teknologi Informasi,2024,Digital Marketing Masterclass,2026-04-04
+CERT-0175,Zahra Nugraha,672023084,Informatika,2023,Workshop Data Analytics,2026-02-14
+CERT-0176,Maman Nugraha,712023136,Pendidikan Informatika,2023,Mobile Apps Development Hackathon,2026-03-11
+CERT-0177,Hafiz Utama,692024248,Teknologi Informasi,2024,Seminar Cloud Computing,2026-03-28
+CERT-0178,Dani Setiawan,702021037,Teknik Komputer,2021,Bootcamp Fullstack Developer,2026-04-12
+CERT-0179,Irfan Sudrajat,692021203,Teknologi Informasi,2021,Workshop Data Analytics,2026-01-04
+CERT-0180,Rian Gunawan,672024095,Informatika,2024,Seminar Cloud Computing,2026-05-30
+CERT-0181,Bunga Rahmawati,672022121,Informatika,2022,Pelatihan Blockchain,2026-06-08
+CERT-0182,Maulana Sudrajat,692022166,Teknologi Informasi,2022,Workshop Machine Learning,2026-06-12
+CERT-0183,Farhan Ningsih,692024030,Teknologi Informasi,2024,Webinar Cyber Security,2026-01-12
+CERT-0184,Cipto Harahap,702021025,Teknik Komputer,2021,Bootcamp Fullstack Developer,2026-05-18
+CERT-0185,Indra Wulandari,702023172,Teknik Komputer,2023,Mobile Apps Development Hackathon,2026-04-18
+CERT-0186,Olivia Laksana,702021214,Teknik Komputer,2021,DevOps Essential Training,2026-06-07
+CERT-0187,Dewi Pohan,672023056,Informatika,2023,DevOps Essential Training,2026-04-24
+CERT-0188,Putra Rahmawati,672023140,Informatika,2023,Pelatihan UI/UX Design,2026-01-16
+CERT-0189,Citra Pohan,682021243,Sistem Informasi,2021,DevOps Essential Training,2026-01-24
+CERT-0190,Utami Nasution,712021013,Pendidikan Informatika,2021,Pelatihan UI/UX Design,2026-03-04
+CERT-0191,Indra Mulyadi,682021213,Sistem Informasi,2021,Mobile Apps Development Hackathon,2026-02-23
+CERT-0192,Olivia Nasution,682023199,Sistem Informasi,2023,Webinar Cyber Security,2026-06-02
+CERT-0193,Ahmad Pohan,682022139,Sistem Informasi,2022,Seminar Cloud Computing,2026-02-14
+CERT-0194,Hendra Saputra,682021092,Sistem Informasi,2021,Bootcamp Fullstack Developer,2026-05-31
+CERT-0195,Wawan Saputra,682023014,Sistem Informasi,2023,Webinar Cyber Security,2026-04-18
+CERT-0196,Kartika Setiawan,672024115,Informatika,2024,Pelatihan UI/UX Design,2026-05-12
+CERT-0197,Olivia Santoso,702022243,Teknik Komputer,2022,Digital Marketing Masterclass,2026-01-12
+CERT-0198,Zahra Suhendra,692024165,Teknologi Informasi,2024,Pelatihan Blockchain,2026-01-16
+CERT-0199,Hayati Utami,702021126,Teknik Komputer,2021,DevOps Essential Training,2026-01-19
+CERT-0200,Naufal Kusuma,692022017,Teknologi Informasi,2022,Webinar Cyber Security,2026-03-12
+CERT-0201,Rina Hadi,712023098,Pendidikan Informatika,2023,Digital Marketing Masterclass,2026-05-16
+CERT-0202,Taufik Ningsih,712024026,Pendidikan Informatika,2024,Workshop Machine Learning,2026-05-22
+CERT-0203,Zahra Nasution,702024228,Teknik Komputer,2024,Bootcamp Fullstack Developer,2026-04-16
+CERT-0204,Yudi Ningsih,702024187,Teknik Komputer,2024,Workshop Machine Learning,2026-03-22
+CERT-0205,Eka Sari,692023245,Teknologi Informasi,2023,Webinar Cyber Security,2026-05-02
+CERT-0206,Eko Kusuma,672021111,Informatika,2021,Workshop Machine Learning,2026-04-06
+CERT-0207,Dani Nugraha,712021151,Pendidikan Informatika,2021,Mobile Apps Development Hackathon,2026-05-24
+CERT-0208,Yudi Setiawan,702023224,Teknik Komputer,2023,Workshop Data Analytics,2026-01-14
+CERT-0209,Taufik Sanjaya,692023027,Teknologi Informasi,2023,Digital Marketing Masterclass,2026-05-10
+CERT-0210,Nugroho Laksana,702022217,Teknik Komputer,2022,Workshop Machine Learning,2026-03-31
+CERT-0211,Irfan Sudrajat,692021196,Teknologi Informasi,2021,Seminar Cloud Computing,2026-05-27
+CERT-0212,Oki Fitriani,712021156,Pendidikan Informatika,2021,Seminar Cloud Computing,2026-01-08
+CERT-0213,Lukman Pohan,692023090,Teknologi Informasi,2023,Pelatihan Blockchain,2026-02-16
+CERT-0214,Kevin Laksana,712024018,Pendidikan Informatika,2024,Webinar Cyber Security,2026-06-12
+CERT-0215,Budi Kusuma,712022097,Pendidikan Informatika,2022,Workshop Data Analytics,2026-04-27
+CERT-0216,Yudi Utama,692023185,Teknologi Informasi,2023,Pelatihan UI/UX Design,2026-05-26
+CERT-0217,Putri Kusuma,672022041,Informatika,2022,Digital Marketing Masterclass,2026-01-13
+CERT-0218,Vina Kusuma,692024170,Teknologi Informasi,2024,Workshop Data Analytics,2026-05-05
+CERT-0219,Putri Zulaikha,702023056,Teknik Komputer,2023,Mobile Apps Development Hackathon,2026-01-30
+CERT-0220,Zainal Fitriani,672023174,Informatika,2023,Digital Marketing Masterclass,2026-05-05
+CERT-0221,Kartika Harahap,672022102,Informatika,2022,Digital Marketing Masterclass,2026-01-15
+CERT-0222,Ahmad Nasution,692022197,Teknologi Informasi,2022,Webinar Cyber Security,2026-03-07
+CERT-0223,Taufik Sari,672021128,Informatika,2021,Workshop Data Analytics,2026-02-14
+CERT-0224,Indra Wulandari,712022129,Pendidikan Informatika,2022,Mobile Apps Development Hackathon,2026-04-01
+CERT-0225,Eko Utami,672024005,Informatika,2024,DevOps Essential Training,2026-01-20
+CERT-0226,Kevin Sari,712024147,Pendidikan Informatika,2024,Workshop Data Analytics,2026-06-13
+CERT-0227,Dewi Hasibuan,672024006,Informatika,2024,Pelatihan UI/UX Design,2026-02-13
+CERT-0228,Dani Raharjo,702023023,Teknik Komputer,2023,Workshop Data Analytics,2026-01-28
+CERT-0229,Putra Fitriani,712024135,Pendidikan Informatika,2024,Workshop Machine Learning,2026-04-12
+CERT-0230,Kevin Harahap,692022086,Teknologi Informasi,2022,Webinar Cyber Security,2026-01-20
+CERT-0231,Juandari Setiawan,712022232,Pendidikan Informatika,2022,Pelatihan UI/UX Design,2026-03-31
+CERT-0232,Zahra Laksana,682021038,Sistem Informasi,2021,Seminar Cloud Computing,2026-02-20
+CERT-0233,Lukman Sanjaya,682021046,Sistem Informasi,2021,DevOps Essential Training,2026-04-29
+CERT-0234,Amir Mulyadi,712024175,Pendidikan Informatika,2024,Digital Marketing Masterclass,2026-06-14
+CERT-0235,Siti Raharjo,692023039,Teknologi Informasi,2023,DevOps Essential Training,2026-01-18
+CERT-0236,Hayati Zulaikha,692023152,Teknologi Informasi,2023,Pelatihan Blockchain,2026-04-01
+CERT-0237,Juandari Pratama,692024116,Teknologi Informasi,2024,Pelatihan Blockchain,2026-01-15
+CERT-0238,Anisa Hasibuan,672021158,Informatika,2021,Digital Marketing Masterclass,2026-05-10
+CERT-0239,Bunga Ningsih,712021116,Pendidikan Informatika,2021,Digital Marketing Masterclass,2026-02-18
+CERT-0240,Wawan Sanjaya,702022246,Teknik Komputer,2022,Pelatihan Blockchain,2026-04-26
+CERT-0241,Gilang Lestari,672022011,Informatika,2022,Bootcamp Fullstack Developer,2026-04-23
+CERT-0242,Fitri Suhendra,712022094,Pendidikan Informatika,2022,Pelatihan UI/UX Design,2026-03-14
+CERT-0243,Bunga Astuti,692021162,Teknologi Informasi,2021,Pelatihan UI/UX Design,2026-01-17
+CERT-0244,Yudi Santoso,712024073,Pendidikan Informatika,2024,Seminar Cloud Computing,2026-06-04
+CERT-0245,Kevin Laksana,692021150,Teknologi Informasi,2021,Webinar Cyber Security,2026-03-31
+CERT-0246,Utomo Utami,682021080,Sistem Informasi,2021,Mobile Apps Development Hackathon,2026-04-07
+CERT-0247,Tari Lestari,682021166,Sistem Informasi,2021,Workshop Data Analytics,2026-05-11
+CERT-0248,Anisa Saputra,692023047,Teknologi Informasi,2023,Bootcamp Fullstack Developer,2026-03-29
+CERT-0249,Bambang Purnomo,682022036,Sistem Informasi,2022,Webinar Cyber Security,2026-01-20
+CERT-0250,Taufik Santoso,712021170,Pendidikan Informatika,2021,Pelatihan UI/UX Design,2026-06-08
+CERT-0251,Indra Sanjaya,702022042,Teknik Komputer,2022,Webinar Cyber Security,2026-06-09
+CERT-0252,Dani Utama,702021106,Teknik Komputer,2021,Pelatihan UI/UX Design,2026-03-02
+CERT-0253,Fitri Raharjo,692024060,Teknologi Informasi,2024,Mobile Apps Development Hackathon,2026-03-03
+CERT-0254,Utomo Subagyo,682023174,Sistem Informasi,2023,Digital Marketing Masterclass,2026-04-23
+CERT-0255,Gita Hasibuan,702024248,Teknik Komputer,2024,Webinar Cyber Security,2026-02-21
+CERT-0256,Dani Sanjaya,682023165,Sistem Informasi,2023,DevOps Essential Training,2026-04-06
+CERT-0257,Mega Santoso,712021073,Pendidikan Informatika,2021,Workshop Machine Learning,2026-02-11
+CERT-0258,Suryo Zulaikha,712022213,Pendidikan Informatika,2022,Workshop Data Analytics,2026-01-24
+CERT-0259,Reza Sitorus,702023239,Teknik Komputer,2023,Pelatihan Blockchain,2026-04-17
+CERT-0260,Dedi Utami,712023061,Pendidikan Informatika,2023,Workshop Data Analytics,2026-01-21
+CERT-0261,Anisa Sitorus,672023239,Informatika,2023,Workshop Machine Learning,2026-03-27
+CERT-0262,Cahyo Laksana,682021074,Sistem Informasi,2021,DevOps Essential Training,2026-02-05
+CERT-0263,Amir Subagyo,702021232,Teknik Komputer,2021,Workshop Machine Learning,2026-01-05
+CERT-0264,Rian Nasution,682024029,Sistem Informasi,2024,Seminar Cloud Computing,2026-03-02
+CERT-0265,Utomo Setiawan,672022108,Informatika,2022,Digital Marketing Masterclass,2026-04-28
+CERT-0266,Eko Setiawan,702021162,Teknik Komputer,2021,Mobile Apps Development Hackathon,2026-05-28
+CERT-0267,Putra Laksana,692024001,Teknologi Informasi,2024,Digital Marketing Masterclass,2026-04-01
+CERT-0268,Putra Mulyadi,702022171,Teknik Komputer,2022,Workshop Machine Learning,2026-05-15
+CERT-0269,Anisa Pratama,712021100,Pendidikan Informatika,2021,DevOps Essential Training,2026-01-12
+CERT-0270,Siti Wulandari,692023192,Teknologi Informasi,2023,Pelatihan Blockchain,2026-04-02
+CERT-0271,Cahyo Pratama,692022188,Teknologi Informasi,2022,Workshop Machine Learning,2026-05-29
+CERT-0272,Aditya Lestari,682021091,Sistem Informasi,2021,Mobile Apps Development Hackathon,2026-03-28
+CERT-0273,Farhan Wijaya,702024162,Teknik Komputer,2024,Webinar Cyber Security,2026-02-04
+CERT-0274,Eko Ningsih,672023052,Informatika,2023,Pelatihan Blockchain,2026-02-21
+CERT-0275,Maulana Wibowo,692023132,Teknologi Informasi,2023,Workshop Data Analytics,2026-05-20
+CERT-0276,Hayati Pasaribu,672022074,Informatika,2022,Pelatihan UI/UX Design,2026-01-13
+CERT-0277,Kevin Lestari,692021205,Teknologi Informasi,2021,Pelatihan UI/UX Design,2026-04-22
+CERT-0278,Maulana Utami,702024087,Teknik Komputer,2024,Webinar Cyber Security,2026-05-08
+CERT-0279,Wati Purnomo,692023206,Teknologi Informasi,2023,Workshop Machine Learning,2026-04-19
+CERT-0280,Fahmi Fitriani,712022140,Pendidikan Informatika,2022,Seminar Cloud Computing,2026-03-24
+CERT-0281,Gilang Kusuma,692023079,Teknologi Informasi,2023,DevOps Essential Training,2026-06-04
+CERT-0282,Yuli Fitriani,682024090,Sistem Informasi,2024,DevOps Essential Training,2026-01-11
+CERT-0283,Zahra Putri,712024071,Pendidikan Informatika,2024,Pelatihan Blockchain,2026-01-20
+CERT-0284,Utami Utami,692022244,Teknologi Informasi,2022,Pelatihan Blockchain,2026-02-06
+CERT-0285,Irfan Sanjaya,702021018,Teknik Komputer,2021,Bootcamp Fullstack Developer,2026-06-15
+CERT-0286,Anisa Rahmawati,702021155,Teknik Komputer,2021,Webinar Cyber Security,2026-04-26
+CERT-0287,Anisa Rahmawati,702021147,Teknik Komputer,2021,Webinar Cyber Security,2026-05-16
+CERT-0288,Anisa Utami,692023064,Teknologi Informasi,2023,Workshop Machine Learning,2026-01-07
+CERT-0289,Aditya Wijaya,702024234,Teknik Komputer,2024,Mobile Apps Development Hackathon,2026-01-31
+CERT-0290,Rian Pasaribu,702022157,Teknik Komputer,2022,Seminar Cloud Computing,2026-05-06
+CERT-0291,Maman Setiawan,682021116,Sistem Informasi,2021,Webinar Cyber Security,2026-04-24
+CERT-0292,Fahmi Sari,692021141,Teknologi Informasi,2021,Mobile Apps Development Hackathon,2026-03-16
+CERT-0293,Naufal Harahap,682022204,Sistem Informasi,2022,Pelatihan UI/UX Design,2026-05-11
+CERT-0294,Oki Setiawan,682022061,Sistem Informasi,2022,DevOps Essential Training,2026-01-07
+CERT-0295,Anisa Sudrajat,712023120,Pendidikan Informatika,2023,Mobile Apps Development Hackathon,2026-02-03
+CERT-0296,Rina Kusuma,672023102,Informatika,2023,DevOps Essential Training,2026-05-15
+CERT-0297,Dewi Astuti,712021033,Pendidikan Informatika,2021,Pelatihan UI/UX Design,2026-06-14
+CERT-0298,Eko Zulaikha,702023033,Teknik Komputer,2023,Mobile Apps Development Hackathon,2026-06-13
+CERT-0299,Olivia Wijaya,682024129,Sistem Informasi,2024,Pelatihan Blockchain,2026-02-01
+CERT-0300,Kartika Laksana,692022042,Teknologi Informasi,2022,Pelatihan UI/UX Design,2026-02-27

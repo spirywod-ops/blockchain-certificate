@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f4f6;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#generateAllBtn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background: #1e3a8a;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generateAllBtn:hover {
+    background: #1d4ed8;
+}
+
+#status {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    padding: 10px 12px;
+
+    min-width: 220px;
+
+    font-size: 14px;
+    color: #334155;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   CERTIFICATE
+========================= */
+
+.certificate {
+    width: 1200px;
+    height: 850px;
+
+    background: white;
+    position: relative;
+    overflow: hidden;
+
+    padding: 35px 60px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.border {
+    position: absolute;
+    inset: 18px;
+    border: 7px solid #0f172a;
+}
+
+/* Dekorasi Lingkaran */
+
+.certificate::before {
+    content: "";
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+
+    background: #1e40af;
+    opacity: 0.08;
+}
+
+.certificate::after {
+    content: "";
+    position: absolute;
+
+    bottom: -150px;
+    left: -150px;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    opacity: 0.08;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.institution {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 62px;
+    color: #0f172a;
+    letter-spacing: 8px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #64748b;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.awarded {
+    font-size: 28px;
+    color: #475569;
+}
+
+.content h2 {
+    margin-top: 15px;
+
+    font-size: 68px;
+    font-weight: 700;
+
+    color: #1e3a8a;
+}
+
+.description {
+    margin: 28px auto;
+
+    width: 75%;
+
+    line-height: 1.9;
+    color: #334155;
+
+    font-size: 18px;
+}
+
+.info {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+
+    font-size: 19px;
+}
+
+.certificate-meta {
+    margin-top: 22px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    position: absolute;
+
+    left: 70px;
+    right: 70px;
+    bottom: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* QR */
+
+.qr-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#qrcode {
+    width: 145px;
+    height: 145px;
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-label {
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Signature */
+
+.signature {
+    text-align: center;
+}
+
+.signature img {
+    width: 180px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.signature hr {
+    width: 220px;
+
+    margin: 0 auto;
+
+    border: none;
+    border-top: 2px solid #94a3b8;
+}
+
+.signature h4 {
+    margin-top: 10px;
+
+    color: #0f172a;
+    font-size: 18px;
+}
