@@ -289,7 +289,9 @@ function tampilkanSertifikat(mahasiswa) {
     const hash = hashCertificateData(certificateData);
 
     const verifyUrl =
-        "https://spirywod-ops.github.io/blockchain-certificate/verify.html?hash=0x" + hash;
+        "https://spirywod-ops.github.io/blockchain-certificate/verify.html" +
+        "?hash=0x" + hash +
+        "&data=" + encodeURIComponent(JSON.stringify(certificateData));
 
     document.getElementById("qrcode").innerHTML = "";
 
