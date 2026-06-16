@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,229 +14,110 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 40px 20px;
+            padding: 16px 14px;
         }
 
-        .container {
-            width: 100%;
-            max-width: 520px;
-        }
+        .container { width: 100%; max-width: 420px; }
 
-        /* Header */
-        .page-header {
-            text-align: center;
-            margin-bottom: 28px;
-        }
-        .page-header h1 {
-            font-size: 24px;
-            color: #0f172a;
-            margin-bottom: 4px;
-        }
-        .page-header p {
-            font-size: 13px;
-            color: #64748b;
-        }
+        .page-header { text-align: center; margin-bottom: 10px; }
+        .page-header h1 { font-size: 17px; color: #0f172a; margin-bottom: 2px; }
+        .page-header p  { font-size: 11px; color: #64748b; }
 
-        /* Network badge */
         .network-badge {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
             background: #eff6ff;
             color: #1d4ed8;
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 600;
-            padding: 4px 12px;
+            padding: 3px 10px;
             border-radius: 99px;
-            margin-bottom: 28px;
+            margin-bottom: 10px;
         }
-        .network-dot {
-            width: 7px;
-            height: 7px;
-            background: #22c55e;
-            border-radius: 50%;
-        }
+        .network-dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; }
 
-        /* Card */
         .card {
             background: white;
-            border-radius: 20px;
-            padding: 28px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            margin-bottom: 16px;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 3px 16px rgba(0,0,0,0.08);
         }
+        .card-valid   { border-left: 5px solid #22c55e; }
+        .card-invalid { border-left: 5px solid #ef4444; }
 
-        /* Valid / Invalid border */
-        .card-valid   { border-left: 6px solid #22c55e; }
-        .card-invalid { border-left: 6px solid #ef4444; }
-
-        /* Status row */
-        .status-row {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 24px;
-        }
+        /* Status */
+        .status-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
         .status-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            flex-shrink: 0;
+            width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 20px; flex-shrink: 0;
         }
         .status-icon.valid   { background: #dcfce7; }
         .status-icon.invalid { background: #fee2e2; }
-
-        .status-text h2 {
-            font-size: 20px;
-            font-weight: 700;
-        }
+        .status-text h2 { font-size: 15px; font-weight: 700; }
         .status-text h2.valid   { color: #15803d; }
         .status-text h2.invalid { color: #b91c1c; }
-        .status-text p {
-            font-size: 13px;
-            color: #64748b;
-            margin-top: 3px;
-            line-height: 1.4;
-        }
+        .status-text p { font-size: 11px; color: #64748b; margin-top: 2px; line-height: 1.3; }
 
-        /* Detail rows */
-        .detail-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 14px;
+        /* Nama */
+        .nama-besar { font-size: 18px; font-weight: 700; color: #1e3a8a; text-align: center; padding: 6px 0 2px; }
+        .kegiatan-label { font-size: 12px; color: #475569; text-align: center; margin-bottom: 10px; }
+
+        /* Blockchain status */
+        .blockchain-status {
+            display: flex; align-items: center; gap: 6px;
+            background: #f0fdf4; border: 1px solid #bbf7d0;
+            border-radius: 8px; padding: 8px 12px; margin-bottom: 10px;
         }
+        .blockchain-status span { font-size: 12px; font-weight: 600; color: #15803d; }
+
+        /* Detail section */
+        .detail-section { background: #f8fafc; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
         .detail-section h3 {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #94a3b8;
-            margin-bottom: 12px;
+            font-size: 9px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 1px; color: #94a3b8; margin-bottom: 8px;
         }
         .detail-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 7px 0;
-            border-bottom: 1px solid #e2e8f0;
-            gap: 12px;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 5px 0; border-bottom: 1px solid #e2e8f0; gap: 8px;
         }
         .detail-row:last-child { border-bottom: none; }
-        .detail-label {
-            font-size: 13px;
-            color: #64748b;
-            font-weight: 500;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        .detail-value {
-            font-size: 13px;
-            color: #0f172a;
-            font-weight: 600;
-            text-align: right;
-        }
+        .detail-label { font-size: 11px; color: #64748b; font-weight: 500; white-space: nowrap; flex-shrink: 0; }
+        .detail-value { font-size: 11px; color: #0f172a; font-weight: 600; text-align: right; }
 
-        /* Nama besar */
-        .nama-besar {
-            font-size: 22px;
-            font-weight: 700;
-            color: #1e3a8a;
-            text-align: center;
-            padding: 14px 0 6px;
-        }
-        .kegiatan-label {
-            font-size: 14px;
-            color: #475569;
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        /* Status blockchain */
-        .blockchain-status {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            border-radius: 10px;
-            padding: 12px 16px;
-            margin-bottom: 14px;
-        }
-        .blockchain-status span {
-            font-size: 13px;
-            font-weight: 600;
-            color: #15803d;
-        }
-
-        /* Hash box */
-        .hash-box {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 12px 14px;
-        }
+        /* Hash */
+        .hash-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; }
         .hash-box .hash-label {
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #94a3b8;
-            margin-bottom: 6px;
+            font-size: 9px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 1px; color: #94a3b8; margin-bottom: 4px;
         }
         .hash-box .hash-value {
             font-family: 'Courier New', monospace;
-            font-size: 11px;
-            color: #475569;
-            word-break: break-all;
-            line-height: 1.6;
+            font-size: 9px; color: #475569; word-break: break-all; line-height: 1.5;
         }
 
+        /* Footer */
+        .page-footer { text-align: center; color: #94a3b8; font-size: 10px; margin-top: 8px; }
+        .page-footer a { color: #1d4ed8; text-decoration: none; }
+
         /* Loading */
-        .loading {
-            text-align: center;
-            padding: 48px 0;
-            color: #64748b;
-            font-size: 14px;
-        }
+        .loading { text-align: center; padding: 32px 0; color: #64748b; font-size: 13px; }
         .spinner {
-            width: 36px;
-            height: 36px;
-            border: 3px solid #e2e8f0;
-            border-top-color: #1e3a8a;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin: 0 auto 16px;
+            width: 30px; height: 30px;
+            border: 3px solid #e2e8f0; border-top-color: #1e3a8a;
+            border-radius: 50%; animation: spin 0.8s linear infinite;
+            margin: 0 auto 12px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
 
         /* Error */
-        .error-card {
-            background: #fef2f2;
-            border: 1px solid #fecaca;
-            border-radius: 16px;
-            padding: 28px;
-            text-align: center;
-        }
-        .error-card .error-icon { font-size: 40px; margin-bottom: 12px; }
-        .error-card h3 { color: #b91c1c; font-size: 16px; margin-bottom: 8px; }
-        .error-card p  { color: #7f1d1d; font-size: 13px; line-height: 1.5; }
-
-        /* Footer */
-        .page-footer {
-            text-align: center;
-            color: #94a3b8;
-            font-size: 12px;
-            margin-top: 8px;
-        }
-        .page-footer a { color: #1d4ed8; text-decoration: none; }
+        .error-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 20px; text-align: center; }
+        .error-card .error-icon { font-size: 32px; margin-bottom: 8px; }
+        .error-card h3 { color: #b91c1c; font-size: 14px; margin-bottom: 6px; }
+        .error-card p  { color: #7f1d1d; font-size: 12px; line-height: 1.4; }
     </style>
 </head>
-
 <body>
 <div class="container">
 
@@ -254,8 +134,7 @@
     </div>
 
     <div id="app">
-        <!-- Loading awal -->
-        <div class="card" id="loadingCard">
+        <div class="card">
             <div class="loading">
                 <div class="spinner"></div>
                 Menghubungi blockchain...
@@ -263,10 +142,9 @@
         </div>
     </div>
 
-    <div class="page-footer">
-        Lihat kontrak di
+    <div class="page-footer" style="margin-top:8px">
         <a href="https://sepolia.etherscan.io/address/0x97FD52D4aeeF99D423799EDa0Bc53312351d0144" target="_blank">
-            Sepolia Etherscan
+            Lihat kontrak di Sepolia Etherscan
         </a>
     </div>
 
@@ -274,11 +152,9 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
-
 <script>
 const CONTRACT_ADDRESS = "0x97FD52D4aeeF99D423799EDa0Bc53312351d0144";
-const RPC_URL          = "https://ethereum-sepolia-rpc.publicnode.com";
-
+const RPC_URL = "https://ethereum-sepolia-rpc.publicnode.com";
 const ABI = [{
     "inputs": [{ "internalType": "bytes32", "name": "hash", "type": "bytes32" }],
     "name": "verifyCertificate",
@@ -294,18 +170,15 @@ const ABI = [{
 const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
 const contract  = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider);
 
-function escapeHtml(str) {
-    return String(str || "")
-        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function e(str) {
+    return String(str||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
 
-function formatTimestamp(unixSeconds) {
-    if (!unixSeconds || unixSeconds === 0) return "-";
-    const d = new Date(Number(unixSeconds) * 1000);
-    return d.toLocaleDateString("id-ID", {
-        weekday: "long", year: "numeric", month: "long", day: "numeric",
-        hour: "2-digit", minute: "2-digit", timeZoneName: "short"
+function formatTs(unix) {
+    if (!unix || unix === 0) return "-";
+    return new Date(Number(unix)*1000).toLocaleDateString("id-ID", {
+        weekday:"long", year:"numeric", month:"long", day:"numeric",
+        hour:"2-digit", minute:"2-digit", timeZoneName:"short"
     });
 }
 
@@ -314,13 +187,12 @@ function renderError(msg) {
         <div class="error-card">
             <div class="error-icon">⚠️</div>
             <h3>Tidak Dapat Memverifikasi</h3>
-            <p>${escapeHtml(msg)}</p>
+            <p>${e(msg)}</p>
         </div>`;
 }
 
-function renderResult(isValid, issuedAt, certId, hashHex, qrData) {
+function renderResult(isValid, issuedAt, certId, hashHex, d) {
     const app = document.getElementById("app");
-
     if (!isValid) {
         app.innerHTML = `
         <div class="card card-invalid">
@@ -328,28 +200,19 @@ function renderResult(isValid, issuedAt, certId, hashHex, qrData) {
                 <div class="status-icon invalid">❌</div>
                 <div class="status-text">
                     <h2 class="invalid">Sertifikat Tidak Valid</h2>
-                    <p>Hash ini tidak terdaftar di blockchain. Sertifikat mungkin tidak resmi atau datanya telah diubah.</p>
+                    <p>Hash tidak terdaftar di blockchain. Sertifikat mungkin tidak resmi atau datanya telah diubah.</p>
                 </div>
             </div>
             <div class="hash-box">
                 <div class="hash-label">Hash yang diverifikasi</div>
-                <div class="hash-value">${escapeHtml(hashHex)}</div>
+                <div class="hash-value">${e(hashHex)}</div>
             </div>
         </div>`;
         return;
     }
 
-    // Data dari QR (jika ada) atau dari blockchain
-    const nama      = qrData ? escapeHtml(qrData.nama)      : "-";
-    const nim       = qrData ? escapeHtml(qrData.nim)       : "-";
-    const prodi     = qrData ? escapeHtml(qrData.prodi)     : "-";
-    const angkatan  = qrData ? escapeHtml(qrData.angkatan)  : "-";
-    const kegiatan  = qrData ? escapeHtml(qrData.kegiatan)  : "-";
-    const tanggal   = qrData ? escapeHtml(qrData.tanggal)   : "-";
-
     app.innerHTML = `
     <div class="card card-valid">
-
         <div class="status-row">
             <div class="status-icon valid">✅</div>
             <div class="status-text">
@@ -358,90 +221,54 @@ function renderResult(isValid, issuedAt, certId, hashHex, qrData) {
             </div>
         </div>
 
-        <div class="nama-besar">${nama}</div>
-        <div class="kegiatan-label">${kegiatan}</div>
+        <div class="nama-besar">${d ? e(d.nama) : "-"}</div>
+        <div class="kegiatan-label">${d ? e(d.kegiatan) : "-"}</div>
 
         <div class="blockchain-status">
-            <span>✔ Tersimpan di Blockchain · ${escapeHtml(certId)}</span>
+            <span>✔ Tersimpan di Blockchain · ${e(certId)}</span>
         </div>
 
         <div class="detail-section">
             <h3>Data Mahasiswa</h3>
-            <div class="detail-row">
-                <span class="detail-label">NIM</span>
-                <span class="detail-value">${nim}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Program Studi</span>
-                <span class="detail-value">${prodi}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Angkatan</span>
-                <span class="detail-value">${angkatan}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Tanggal Kegiatan</span>
-                <span class="detail-value">${tanggal}</span>
-            </div>
+            <div class="detail-row"><span class="detail-label">NIM</span><span class="detail-value">${d ? e(d.nim) : "-"}</span></div>
+            <div class="detail-row"><span class="detail-label">Program Studi</span><span class="detail-value">${d ? e(d.prodi) : "-"}</span></div>
+            <div class="detail-row"><span class="detail-label">Angkatan</span><span class="detail-value">${d ? e(d.angkatan) : "-"}</span></div>
+            <div class="detail-row"><span class="detail-label">Tanggal Kegiatan</span><span class="detail-value">${d ? e(d.tanggal) : "-"}</span></div>
         </div>
 
         <div class="detail-section">
             <h3>Data Blockchain</h3>
-            <div class="detail-row">
-                <span class="detail-label">ID Sertifikat</span>
-                <span class="detail-value">${escapeHtml(certId)}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Waktu Penerbitan</span>
-                <span class="detail-value">${formatTimestamp(issuedAt)}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Network</span>
-                <span class="detail-value">Ethereum Sepolia</span>
-            </div>
+            <div class="detail-row"><span class="detail-label">ID Sertifikat</span><span class="detail-value">${e(certId)}</span></div>
+            <div class="detail-row"><span class="detail-label">Waktu Penerbitan</span><span class="detail-value">${formatTs(issuedAt)}</span></div>
+            <div class="detail-row"><span class="detail-label">Network</span><span class="detail-value">Ethereum Sepolia</span></div>
         </div>
 
         <div class="hash-box">
             <div class="hash-label">Hash yang diverifikasi</div>
-            <div class="hash-value">${escapeHtml(hashHex)}</div>
+            <div class="hash-value">${e(hashHex)}</div>
         </div>
-
     </div>`;
 }
 
-// ── MAIN ──
 (async function main() {
-    const params   = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
     const hashParam = params.get("hash");
 
-    if (!hashParam) {
-        renderError("Tidak ada hash sertifikat di URL. Scan QR Code dari sertifikat resmi.");
-        return;
-    }
+    if (!hashParam) { renderError("Tidak ada hash sertifikat di URL. Scan QR Code dari sertifikat resmi."); return; }
 
     const hashHex = hashParam.startsWith("0x") ? hashParam : "0x" + hashParam;
+    if (!/^0x[0-9a-fA-F]{64}$/.test(hashHex)) { renderError("Format hash tidak valid."); return; }
 
-    if (!/^0x[0-9a-fA-F]{64}$/.test(hashHex)) {
-        renderError("Format hash tidak valid. Pastikan Anda scan QR dari sertifikat yang benar.");
-        return;
-    }
-
-    // Ambil data mahasiswa dari URL jika ada (dikirim via QR)
     let qrData = null;
-    try {
-        const raw = params.get("data");
-        if (raw) qrData = JSON.parse(decodeURIComponent(raw));
-    } catch (_) {}
+    try { const raw = params.get("data"); if (raw) qrData = JSON.parse(decodeURIComponent(raw)); } catch(_) {}
 
     try {
         const [isValid, issuedAt, certId] = await contract.verifyCertificate(hashHex);
         renderResult(isValid, issuedAt, certId, hashHex, qrData);
-    } catch (err) {
-        console.error(err);
+    } catch(err) {
         renderError("Gagal menghubungi blockchain. Pastikan koneksi internet aktif.\n\nDetail: " + err.message);
     }
 })();
 </script>
-
 </body>
 </html>
