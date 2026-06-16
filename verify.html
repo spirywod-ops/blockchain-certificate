@@ -306,9 +306,7 @@
         }
 
         @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
 
         /* ── Network badge ── */
@@ -384,7 +382,11 @@
             <!-- Manual hash input -->
             <h2>Masukkan Hash Sertifikat</h2>
             <div class="input-group">
-                <input type="text" id="hashInput" placeholder="0x1a2b3c4d... (SHA-256 hash dari data sertifikat)">
+                <input
+                    type="text"
+                    id="hashInput"
+                    placeholder="0x1a2b3c4d... (SHA-256 hash dari data sertifikat)"
+                >
                 <button class="btn btn-primary" id="verifyBtn">Verifikasi</button>
             </div>
 
@@ -431,10 +433,12 @@
         <!-- Footer -->
         <div class="page-footer">
             Lihat kontrak di
-            <a href="https://sepolia.etherscan.io/address/0x97FD52D4aeeF99D423799EDa0Bc53312351d0144"
-                target="_blank">Sepolia Etherscan</a>
+            <a
+                href="https://sepolia.etherscan.io/address/0x97FD52D4aeeF99D423799EDa0Bc53312351d0144"
+                target="_blank"
+            >Sepolia Etherscan</a>
             &nbsp;·&nbsp;
-            Contract: <code>0x97FD52D4aeeF99D423799EDa0Bc53312351d0144</code>
+            Contract: <code>0x97FD52D4...d0144</code>
         </div>
 
     </div>
@@ -447,316 +451,315 @@
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
 
     <script>
-        /*
-        |--------------------------------------------------------------------------
-        | CONFIG — sama dengan script.js
-        |--------------------------------------------------------------------------
-        */
+    /*
+    |--------------------------------------------------------------------------
+    | CONFIG — sama dengan script.js
+    |--------------------------------------------------------------------------
+    */
 
-        const CONTRACT_ADDRESS = "0x97FD52D4aeeF99D423799EDa0Bc53312351d0144";
-        const SEPOLIA_RPC = "https://rpc.sepolia.org";
+    const CONTRACT_ADDRESS = "0x97FD52D4aeeF99D423799EDa0Bc53312351d0144";
+    const SEPOLIA_RPC      = "https://ethereum-sepolia-rpc.publicnode.com";
 
-        const ABI = [
-            {
-                "inputs": [{ "internalType": "bytes32", "name": "hash", "type": "bytes32" }],
-                "name": "verifyCertificate",
-                "outputs": [
-                    { "internalType": "bool", "name": "isValid", "type": "bool" },
-                    { "internalType": "uint256", "name": "issuedAt", "type": "uint256" },
-                    { "internalType": "string", "name": "certId", "type": "string" }
-                ],
-                "stateMutability": "view",
-                "type": "function"
-            }
-        ];
+    const ABI = [
+        {
+            "inputs": [{ "internalType": "bytes32", "name": "hash", "type": "bytes32" }],
+            "name": "verifyCertificate",
+            "outputs": [
+                { "internalType": "bool",    "name": "isValid",  "type": "bool"    },
+                { "internalType": "uint256", "name": "issuedAt", "type": "uint256" },
+                { "internalType": "string",  "name": "certId",   "type": "string"  }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ];
 
-        /*
-        |--------------------------------------------------------------------------
-        | PROVIDER — read-only, tidak butuh MetaMask
-        |--------------------------------------------------------------------------
-        */
+    /*
+    |--------------------------------------------------------------------------
+    | PROVIDER — read-only, tidak butuh MetaMask
+    |--------------------------------------------------------------------------
+    */
 
-        const provider = new ethers.providers.JsonRpcProvider(SEPOLIA_RPC);
-        const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider);
+    const provider = new ethers.providers.JsonRpcProvider(SEPOLIA_RPC);
+    const contract  = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider);
 
-        /*
-        |--------------------------------------------------------------------------
-        | HASH HELPER — sama persis dengan script.js
-        |--------------------------------------------------------------------------
-        */
+    /*
+    |--------------------------------------------------------------------------
+    | HASH HELPER — sama persis dengan script.js
+    |--------------------------------------------------------------------------
+    */
 
-        function buildCertificateData(obj) {
-            return {
-                certificate_id: obj.certificate_id,
-                nama: obj.nama,
-                nim: obj.nim,
-                prodi: obj.prodi,
-                angkatan: obj.angkatan,
-                kegiatan: obj.kegiatan,
-                tanggal: obj.tanggal
-            };
+    function buildCertificateData(obj) {
+        return {
+            certificate_id : obj.certificate_id,
+            nama           : obj.nama,
+            nim            : obj.nim,
+            prodi          : obj.prodi,
+            angkatan       : obj.angkatan,
+            kegiatan       : obj.kegiatan,
+            tanggal        : obj.tanggal
+        };
+    }
+
+    function hashCertificateData(data) {
+        return "0x" + CryptoJS.SHA256(JSON.stringify(data)).toString();
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | UI HELPERS
+    |--------------------------------------------------------------------------
+    */
+
+    function showError(msg) {
+        const el = document.getElementById("errorMsg");
+        el.textContent = msg;
+        el.style.display = "block";
+    }
+
+    function clearError() {
+        document.getElementById("errorMsg").style.display = "none";
+    }
+
+    function setLoading(on) {
+        document.getElementById("loading").style.display = on ? "block" : "none";
+        document.getElementById("result").style.display  = on ? "none"  : "";
+        if (on) document.getElementById("result").style.display = "none";
+    }
+
+    function formatTimestamp(unixSeconds) {
+        if (!unixSeconds || unixSeconds === 0) return "-";
+        const d = new Date(Number(unixSeconds) * 1000);
+        return d.toLocaleDateString("id-ID", {
+            weekday : "long",
+            year    : "numeric",
+            month   : "long",
+            day     : "numeric",
+            hour    : "2-digit",
+            minute  : "2-digit",
+            timeZoneName : "short"
+        });
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | VERIFY ON BLOCKCHAIN
+    |--------------------------------------------------------------------------
+    */
+
+    async function verifyHash(hashHex) {
+
+        clearError();
+
+        // Pastikan format 0x + 64 hex chars
+        if (!/^0x[0-9a-fA-F]{64}$/.test(hashHex)) {
+            showError("Format hash tidak valid. Hash harus berupa 0x diikuti 64 karakter hex (SHA-256).");
+            return;
         }
 
-        function hashCertificateData(data) {
-            return "0x" + CryptoJS.SHA256(JSON.stringify(data)).toString();
+        setLoading(true);
+        document.getElementById("result").style.display = "none";
+
+        try {
+            const [isValid, issuedAt, certId] = await contract.verifyCertificate(hashHex);
+
+            setLoading(false);
+            showResult(isValid, issuedAt, certId, hashHex);
+
+        } catch (err) {
+            setLoading(false);
+            console.error(err);
+            showError("Gagal menghubungi blockchain. Pastikan koneksi internet aktif.\n\nDetail: " + err.message);
         }
+    }
 
-        /*
-        |--------------------------------------------------------------------------
-        | UI HELPERS
-        |--------------------------------------------------------------------------
-        */
+    /*
+    |--------------------------------------------------------------------------
+    | RENDER RESULT
+    |--------------------------------------------------------------------------
+    */
 
-        function showError(msg) {
-            const el = document.getElementById("errorMsg");
-            el.textContent = msg;
-            el.style.display = "block";
-        }
+    function showResult(isValid, issuedAt, certId, hashHex) {
 
-        function clearError() {
-            document.getElementById("errorMsg").style.display = "none";
-        }
+        const resultCard  = document.getElementById("result");
+        const icon        = document.getElementById("statusIcon");
+        const title       = document.getElementById("statusTitle");
+        const subtitle    = document.getElementById("statusSubtitle");
+        const table       = document.getElementById("detailTable");
 
-        function setLoading(on) {
-            document.getElementById("loading").style.display = on ? "block" : "none";
-            document.getElementById("result").style.display = on ? "none" : "";
-            if (on) document.getElementById("result").style.display = "none";
-        }
+        resultCard.className = "card " + (isValid ? "result-valid" : "result-invalid");
+        resultCard.style.display = "block";
 
-        function formatTimestamp(unixSeconds) {
-            if (!unixSeconds || unixSeconds === 0) return "-";
-            const d = new Date(Number(unixSeconds) * 1000);
-            return d.toLocaleDateString("id-ID", {
-                weekday: "long",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                timeZoneName: "short"
-            });
-        }
+        icon.className    = "status-icon " + (isValid ? "valid" : "invalid");
+        icon.textContent  = isValid ? "✅" : "❌";
+        title.className   = isValid ? "valid" : "invalid";
+        title.textContent = isValid ? "Sertifikat Valid" : "Sertifikat Tidak Ditemukan";
+        subtitle.textContent = isValid
+            ? "Hash ini terdaftar di blockchain dan telah diverifikasi keasliannya."
+            : "Hash ini tidak terdaftar di blockchain. Sertifikat mungkin tidak resmi atau datanya telah diubah.";
 
-        /*
-        |--------------------------------------------------------------------------
-        | VERIFY ON BLOCKCHAIN
-        |--------------------------------------------------------------------------
-        */
-
-        async function verifyHash(hashHex) {
-
-            clearError();
-
-            // Pastikan format 0x + 64 hex chars
-            if (!/^0x[0-9a-fA-F]{64}$/.test(hashHex)) {
-                showError("Format hash tidak valid. Hash harus berupa 0x diikuti 64 karakter hex (SHA-256).");
-                return;
-            }
-
-            setLoading(true);
-            document.getElementById("result").style.display = "none";
-
-            try {
-                const [isValid, issuedAt, certId] = await contract.verifyCertificate(hashHex);
-
-                setLoading(false);
-                showResult(isValid, issuedAt, certId, hashHex);
-
-            } catch (err) {
-                setLoading(false);
-                console.error(err);
-                showError("Gagal menghubungi blockchain. Pastikan koneksi internet aktif.\n\nDetail: " + err.message);
-            }
-        }
-
-        /*
-        |--------------------------------------------------------------------------
-        | RENDER RESULT
-        |--------------------------------------------------------------------------
-        */
-
-        function showResult(isValid, issuedAt, certId, hashHex) {
-
-            const resultCard = document.getElementById("result");
-            const icon = document.getElementById("statusIcon");
-            const title = document.getElementById("statusTitle");
-            const subtitle = document.getElementById("statusSubtitle");
-            const table = document.getElementById("detailTable");
-
-            resultCard.className = "card " + (isValid ? "result-valid" : "result-invalid");
-            resultCard.style.display = "block";
-
-            icon.className = "status-icon " + (isValid ? "valid" : "invalid");
-            icon.textContent = isValid ? "✅" : "❌";
-            title.className = isValid ? "valid" : "invalid";
-            title.textContent = isValid ? "Sertifikat Valid" : "Sertifikat Tidak Ditemukan";
-            subtitle.textContent = isValid
-                ? "Hash ini terdaftar di blockchain dan telah diverifikasi keasliannya."
-                : "Hash ini tidak terdaftar di blockchain. Sertifikat mungkin tidak resmi atau datanya telah diubah.";
-
-            if (isValid) {
-                table.innerHTML = `
+        if (isValid) {
+            table.innerHTML = `
                 <tr><td>ID Sertifikat</td><td>${escapeHtml(certId) || "-"}</td></tr>
                 <tr><td>Waktu Penerbitan</td><td>${formatTimestamp(issuedAt)}</td></tr>
                 <tr><td>Status</td><td style="color:#15803d;font-weight:700;">✔ Tersimpan di Blockchain</td></tr>
             `;
-            } else {
-                table.innerHTML = `
+        } else {
+            table.innerHTML = `
                 <tr><td>Status</td><td style="color:#b91c1c;font-weight:700;">✘ Tidak Terdaftar</td></tr>
             `;
-            }
-
-            document.getElementById("hashValue").textContent = hashHex;
         }
 
-        function escapeHtml(str) {
-            return String(str)
-                .replace(/&/g, "&amp;")
-                .replace(/</g, "&lt;")
-                .replace(/>/g, "&gt;")
-                .replace(/"/g, "&quot;");
-        }
+        document.getElementById("hashValue").textContent = hashHex;
+    }
 
-        /*
-        |--------------------------------------------------------------------------
-        | QR DECODE — baca gambar → jsQR → parse JSON → hitung hash
-        |--------------------------------------------------------------------------
-        */
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
 
-        function decodeQRFromImage(file) {
-            clearError();
+    /*
+    |--------------------------------------------------------------------------
+    | QR DECODE — baca gambar → jsQR → parse JSON → hitung hash
+    |--------------------------------------------------------------------------
+    */
 
-            const reader = new FileReader();
-            reader.onload = function (e) {
+    function decodeQRFromImage(file) {
+        clearError();
 
-                const img = new Image();
-                img.onload = function () {
+        const reader = new FileReader();
+        reader.onload = function (e) {
 
-                    const canvas = document.createElement("canvas");
-                    canvas.width = img.width;
-                    canvas.height = img.height;
+            const img = new Image();
+            img.onload = function () {
 
-                    const ctx = canvas.getContext("2d");
-                    ctx.drawImage(img, 0, 0);
+                const canvas = document.createElement("canvas");
+                canvas.width  = img.width;
+                canvas.height = img.height;
 
-                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                    const code = jsQR(imageData.data, imageData.width, imageData.height);
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(img, 0, 0);
 
-                    if (!code) {
-                        showError("QR Code tidak terdeteksi di gambar. Coba foto yang lebih jelas atau upload ulang.");
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const code      = jsQR(imageData.data, imageData.width, imageData.height);
+
+                if (!code) {
+                    showError("QR Code tidak terdeteksi di gambar. Coba foto yang lebih jelas atau upload ulang.");
+                    return;
+                }
+
+                let qrContent = code.data;
+                console.log("QR raw content:", qrContent);
+
+                // Coba parse sebagai JSON (format dari script.js)
+                try {
+                    const parsed = JSON.parse(qrContent);
+
+                    // Jika JSON berisi field certificate_id, hitung ulang hash
+                    if (parsed.certificate_id) {
+                        const certData  = buildCertificateData(parsed);
+                        const hashHex   = hashCertificateData(certData);
+
+                        document.getElementById("hashInput").value = hashHex;
+                        verifyHash(hashHex);
                         return;
                     }
 
-                    let qrContent = code.data;
-                    console.log("QR raw content:", qrContent);
-
-                    // Coba parse sebagai JSON (format dari script.js)
-                    try {
-                        const parsed = JSON.parse(qrContent);
-
-                        // Jika JSON berisi field certificate_id, hitung ulang hash
-                        if (parsed.certificate_id) {
-                            const certData = buildCertificateData(parsed);
-                            const hashHex = hashCertificateData(certData);
-
-                            document.getElementById("hashInput").value = hashHex;
-                            verifyHash(hashHex);
-                            return;
-                        }
-
-                        // Jika JSON punya field "hash" langsung
-                        if (parsed.hash) {
-                            const hashHex = parsed.hash.startsWith("0x")
-                                ? parsed.hash
-                                : "0x" + parsed.hash;
-                            document.getElementById("hashInput").value = hashHex;
-                            verifyHash(hashHex);
-                            return;
-                        }
-
-                    } catch (_) {
-                        // Bukan JSON — coba langsung sebagai hex string
+                    // Jika JSON punya field "hash" langsung
+                    if (parsed.hash) {
+                        const hashHex = parsed.hash.startsWith("0x")
+                            ? parsed.hash
+                            : "0x" + parsed.hash;
+                        document.getElementById("hashInput").value = hashHex;
+                        verifyHash(hashHex);
+                        return;
                     }
 
-                    // Fallback: QR berisi raw hex
-                    const rawHash = qrContent.startsWith("0x") ? qrContent : "0x" + qrContent;
-                    document.getElementById("hashInput").value = rawHash;
-                    verifyHash(rawHash);
-                };
+                } catch (_) {
+                    // Bukan JSON — coba langsung sebagai hex string
+                }
 
-                img.src = e.target.result;
+                // Fallback: QR berisi raw hex
+                const rawHash = qrContent.startsWith("0x") ? qrContent : "0x" + qrContent;
+                document.getElementById("hashInput").value = rawHash;
+                verifyHash(rawHash);
             };
 
-            reader.readAsDataURL(file);
+            img.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | EVENT LISTENERS
+    |--------------------------------------------------------------------------
+    */
+
+    // Tombol Verifikasi
+    document.getElementById("verifyBtn").addEventListener("click", () => {
+        const hash = document.getElementById("hashInput").value.trim();
+        if (!hash) {
+            showError("Masukkan hash sertifikat terlebih dahulu.");
+            return;
         }
+        verifyHash(hash);
+    });
 
-        /*
-        |--------------------------------------------------------------------------
-        | EVENT LISTENERS
-        |--------------------------------------------------------------------------
-        */
+    // Enter key di input
+    document.getElementById("hashInput").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") document.getElementById("verifyBtn").click();
+    });
 
-        // Tombol Verifikasi
-        document.getElementById("verifyBtn").addEventListener("click", () => {
-            const hash = document.getElementById("hashInput").value.trim();
-            if (!hash) {
-                showError("Masukkan hash sertifikat terlebih dahulu.");
-                return;
-            }
-            verifyHash(hash);
-        });
+    // QR file input (klik area)
+    document.getElementById("qrDropZone").addEventListener("click", () => {
+        document.getElementById("qrFileInput").click();
+    });
 
-        // Enter key di input
-        document.getElementById("hashInput").addEventListener("keydown", (e) => {
-            if (e.key === "Enter") document.getElementById("verifyBtn").click();
-        });
+    document.getElementById("qrFileInput").addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) decodeQRFromImage(file);
+        e.target.value = ""; // reset agar bisa upload file yang sama lagi
+    });
 
-        // QR file input (klik area)
-        document.getElementById("qrDropZone").addEventListener("click", () => {
-            document.getElementById("qrFileInput").click();
-        });
+    // Drag & drop
+    const dropZone = document.getElementById("qrDropZone");
 
-        document.getElementById("qrFileInput").addEventListener("change", (e) => {
-            const file = e.target.files[0];
-            if (file) decodeQRFromImage(file);
-            e.target.value = ""; // reset agar bisa upload file yang sama lagi
-        });
+    dropZone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropZone.classList.add("dragover");
+    });
 
-        // Drag & drop
-        const dropZone = document.getElementById("qrDropZone");
+    dropZone.addEventListener("dragleave", () => {
+        dropZone.classList.remove("dragover");
+    });
 
-        dropZone.addEventListener("dragover", (e) => {
-            e.preventDefault();
-            dropZone.classList.add("dragover");
-        });
+    dropZone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropZone.classList.remove("dragover");
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith("image/")) {
+            decodeQRFromImage(file);
+        } else {
+            showError("File harus berupa gambar (JPG, PNG, dsb).");
+        }
+    });
 
-        dropZone.addEventListener("dragleave", () => {
-            dropZone.classList.remove("dragover");
-        });
-
-        dropZone.addEventListener("drop", (e) => {
-            e.preventDefault();
-            dropZone.classList.remove("dragover");
-            const file = e.dataTransfer.files[0];
-            if (file && file.type.startsWith("image/")) {
-                decodeQRFromImage(file);
-            } else {
-                showError("File harus berupa gambar (JPG, PNG, dsb).");
-            }
-        });
-
-        // Auto-verify jika URL punya query param ?hash=0x...
-        (function checkUrlParams() {
-            const params = new URLSearchParams(window.location.search);
-            const hashParam = params.get("hash");
-            if (hashParam) {
-                document.getElementById("hashInput").value = hashParam;
-                verifyHash(hashParam);
-            }
-        })();
+    // Auto-verify jika URL punya query param ?hash=0x...
+    (function checkUrlParams() {
+        const params  = new URLSearchParams(window.location.search);
+        const hashParam = params.get("hash");
+        if (hashParam) {
+            document.getElementById("hashInput").value = hashParam;
+            verifyHash(hashParam);
+        }
+    })();
 
     </script>
 
 </body>
-
 </html>
